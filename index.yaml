@@ -1,0 +1,16 @@
+apiVersion: v1
+entries:
+  provisioner:
+  - apiVersion: v1
+    appVersion: 2.4.0
+    created: "2021-05-28T05:42:56.50326079Z"
+    description: local provisioner chart
+    digest: 71519d0c88b16727aed7310e8d76b75275e56f2e05ab6cf3e8a95300bee82e99
+    keywords:
+    - storage
+    - local
+    name: provisioner
+    urls:
+    - https://flachesis.github.io/sig-storage-local-static-provisioner/storage-local-static-provisioner-helm-v2.5.0.tgz
+    version: 2.5.0
+generated: "2021-05-28T05:42:56.494349434Z"
