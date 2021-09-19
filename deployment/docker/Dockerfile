@@ -13,7 +13,7 @@
 # limitations under the License.
 
 ARG ARCH=amd64
-ARG GOVERSION=1.16.1
+ARG GOVERSION=1.17
 FROM golang:$GOVERSION-alpine as builder
 ARG OS=linux
 ARG ARCH=amd64
@@ -24,7 +24,7 @@ RUN GO111MODULE=off CGO_ENABLED=0 GOOS=${OS} GOARCH=${ARCH} go build -a -ldflags
 
 # For security, we use kubernetes community maintained debian base image.
 # https://github.com/kubernetes/release/tree/master/images/build/debian-base
-FROM k8s.gcr.io/build-image/debian-base-${ARCH}:buster-v1.6.0
+FROM k8s.gcr.io/build-image/debian-base-${ARCH}:buster-v1.8.0
 ARG OS=linux
 ARG ARCH=amd64
 
